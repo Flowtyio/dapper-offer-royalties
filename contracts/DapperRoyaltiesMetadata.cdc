@@ -4,7 +4,7 @@ pub contract DapperRoyaltiesMetadata {
     pub struct Royalty {
         // the merchant address to pay royalties to
         pub let addr: Address
-        // the number of tokens (NOT percentage) to distribute
+        // the percentage of tokens to distribute
         pub let cut: UFix64
 
         init(addr: Address, cut: UFix64) {
